@@ -8,7 +8,7 @@ export function AccordionProvider({allowMultiple,children}: AccordionProviderTyp
 
     const setItem = ({itemId,isOpen}: ItemType) => {
     if (!allowMultiple) {
-        const newEntries = Object.entries(items).map(([key,value])=> [key,value=false]);
+        const newEntries = Object.entries(items).map(([key])=> [key,false]);
         const updatedItems = Object.fromEntries(newEntries) as Record<string,boolean>;
         setActiveItem({...updatedItems,[itemId]:isOpen})
     } else {
