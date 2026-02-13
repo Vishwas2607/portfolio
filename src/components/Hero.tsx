@@ -25,7 +25,7 @@ export default function Hero(){
                 </motion.div>
 
                 <motion.div variants={item} className='w-50 md:w-70 lg: aspect-square border-4 border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 transition-all duration-300 ease-in-out rounded-full overflow-hidden order-first md:order-last'>
-                    <img src="/public/my-photo.jpg" alt="Viswas's Photo" className='max-w-full h-auto object-cover'/>
+                    <img src="/my-photo.jpg" alt="Viswas's Photo" className='max-w-full h-auto object-cover'/>
                 </motion.div>
             </div>
 

@@ -69,8 +69,8 @@ export default function Projects(){
                 <AccordionHeader title="Career Dasboard" miniInfo="Secure MERN application for tracking job applications with analytics, and robust authentication." techStack="React · TypeScript · Node.js · Express · MongoDB · JWT · Zod" liveDemo="https://career-dashboard-mern.vercel.app/" github="https://github.com/Vishwas2607/career-dashboard-mern.git"/>
                 <AccordionPanel>
                   <div className="flex flex-col gap-6 sticky">
-                      <img  src="/public/career-dashboard-home.png" className="screenshots"/>
-                      <img  src="/public/career-dashboard-analytics.png" className="screenshots"/>
+                      <img  src="/career-dashboard-home.png" className="screenshots"/>
+                      <img  src="/career-dashboard-analytics.png" className="screenshots"/>
                   </div>
 
                   <div className="flex flex-col gap-6 mt-2">
@@ -104,8 +104,8 @@ export default function Projects(){
                 <AccordionHeader title="FilmBox" miniInfo="Frontend-focused application showcasing API integration, infinite scrolling, caching, and accessibility best practices." techStack="React · TypeScript · React Query · Tailwind CSS" liveDemo="https://film-box-react.vercel.app/" github="https://github.com/Vishwas2607/film-box-react.git"/>
                 <AccordionPanel>
                   <div className="flex flex-col gap-6 sticky">
-                      <img src="/public/film-box-hero.png" className="screenshots"/>
-                      <img src="/public/film-box-search.png" className="screenshots"/>
+                      <img src="/film-box-hero.png" className="screenshots"/>
+                      <img src="/film-box-search.png" className="screenshots"/>
                   </div>
 
                   <div className="flex flex-col gap-6 mt-2">
