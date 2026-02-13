@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html{
+    scroll-behavior: smooth;
+}
+
+@theme {
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-brand: "Inter", system-ui, sans-serif;
+    
+}
+
+@utility section {
+    @apply bg-zinc-900 text-2xl md:text-3xl font-semibold py-20 min-h-dvh
+}
+
+@utility container{
+    @apply max-w-6xl mx-auto px-4 flex flex-col gap-5
+}
+
+@utility card {
+    @apply bg-zinc-900/80 text-lg font-medium rounded-lg border border-zinc-800 p-5 hover:border-zinc-700 hover:-translate-y-0.5 transition-all duration-300 ease-in-out flex flex-col gap-3
+}
+
+@utility list{
+    @apply text-sm md:text-base leading-relaxed text-zinc-200
+}
+
+@utility primary-text{
+    @apply text-zinc-100
+}
+
+@utility secondary-text{
+    @apply text-zinc-400
+}
+
+@utility muted-text{
+    @apply text-zinc-500
+}
+
+@utility headings{
+    @apply text-zinc-50
+}
+
+@utility tech-card{
+    @apply bg-zinc-800 flex gap-4 justify-center items-center border border-zinc-700 px-2 py-1 rounded-lg text-zinc-100 text-base lg:text-lg hover:-translate-y-0.5 duration-300 ease-in-out 
+}
+@utility accent {
+    @apply bg-indigo-500 transition-all duration-300 hover:bg-indigo-400
+} 
+
+@utility body-text{
+    @apply text-sm md:text-base leading-relaxed
+}
+
+@utility small-text{
+    @apply text-xs text-zinc-500
+}
+
+@utility primary-btn{
+    @apply inline-flex items-center gap-2 text-zinc-200 rounded-md bg-indigo-500 px-4 py-2 text-sm font-medium hover:bg-indigo-400 transition-all duration-300 ease-in-out focus-visible:ring-2 focus-visible:ring-indigo-500
+}
+
+@utility secondary-btn {
+    @apply inline-flex rounded-md border border-zinc-700 px-4 py-2 text-sm font-medium text-zinc-100 hover:border-zinc-600 hover:text-indigo-500 transition-all duration-300 ease-in-out justify-center items-center gap-2
+}
+
+@utility header{
+    @apply sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md
+}
+
+@utility footer{
+    @apply  z-50 border-t border-zinc-800 bg-zinc-950/80 backdrop-blur-md
+}
+
+@utility links{
+    @apply text-zinc-400 hover:text-zinc-100
+}
+
+@utility active-link{
+    @apply text-indigo-400
+}
+
+@utility accordion {
+    @apply bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 rounded-xl transition-all duration-300 ease-in-out px-5 md:px-10 py-4
+}
+
+@utility accordion-active{
+    @apply shadow-lg shadow-indigo-500/10
+}
+
+@utility accordion-hidden{
+    @apply shadow-none
+}
+
+@utility screenshots {
+    @apply bg-zinc-900 p-2 rounded-xl border border-zinc-700 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out aspect-video max-w-150
+}
+
+@utility title-line{
+    @apply h-0.5 w-12 bg-linear-to-r from-indigo-500 to-purple-500
+}
+
