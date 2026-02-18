@@ -12,7 +12,7 @@ export default function Projects(){
             <AccordionProvider allowMultiple={false}>
               <motion.h2 variants={item} className="headings">Featured Projects</motion.h2>
               <AccordionItemIdProvider id="project1">
-                <AccordionHeader title="Fitness Planner (WIP)" miniInfo="Role-based fitness planning platform focusing on backend architecture, authorization, and clean separation of concerns." techStack="React · TypeScript · Node.js · Express · MongoDB · JWT · Zod" liveDemo="#" github="#"/>
+                <AccordionHeader title="Fitness Planner (WIP)" miniInfo="Role-based fitness planning platform focusing on backend architecture, authorization, and clean separation of concerns." techStack="React · TypeScript · Node.js · Express · MongoDB · JWT · Zod" liveDemo="#" github="https://github.com/Vishwas2607/fitness-wiki-mern.git"/>
                 <AccordionPanel >
                   <div className="flex flex-col gap-6 sticky">
                       <img src="#" className="screenshots"/>
