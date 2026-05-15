@@ -1,4 +1,4 @@
-import { SiReact,SiNodedotjs,SiMongodb,SiExpress,SiTypescript,SiTailwindcss, SiHtml5, SiCss3,SiJavascript } from 'react-icons/si';
+import { SiReact,SiNodedotjs,SiMongodb,SiExpress,SiTypescript,SiTailwindcss, SiHtml5, SiCss3,SiJavascript, SiReactquery, SiRedis, SiMongoose, SiVitest, SiDocker } from 'react-icons/si';
 import { motion } from "framer-motion"
 import { container, item } from "../utils/constants"
 import FramerWrapper from "./FramerWrapper"
@@ -30,15 +30,14 @@ export default function Hero(){
             </div>
 
                 <motion.div variants={item} className='flex flex-wrap gap-6 justify-center items-center tracking-tight mt-5'>
-                    <motion.div variants={item}className="tech-card"><SiHtml5 size={24}/> HTML 5</motion.div>
-
-                    <motion.div variants={item}className="tech-card"><SiCss3 size={24}/> CSS 3</motion.div>
 
                     <motion.div variants={item}className="tech-card"><SiJavascript size={24}/> JavaScript</motion.div>
 
-                    <motion.div variants={item}className="tech-card"><SiReact size={24}/> React</motion.div>
-            
                     <motion.div variants={item}className="tech-card"><SiTypescript size={24}/> TypeScript</motion.div>
+
+                    <motion.div variants={item}className="tech-card"><SiReact size={24}/> React</motion.div>
+
+                    <motion.div variants={item}className="tech-card"><SiReactquery size={24}/> React Query</motion.div>
 
                     <motion.div variants={item}className="tech-card"><SiTailwindcss size={24}/> TailwindCSS</motion.div>
 
@@ -46,7 +45,13 @@ export default function Hero(){
 
                     <motion.div variants={item}className="tech-card"><SiExpress size={24}/> Express</motion.div>
 
+                    <motion.div variants={item}className="tech-card"><SiRedis size={24}/> Redis</motion.div>
+
                     <motion.div variants={item}className="tech-card"><SiMongodb size={24}/> MongoDB</motion.div>
+
+                    <motion.div variants={item}className="tech-card"><SiVitest size={24}/> Vitest</motion.div>
+
+                    <motion.div variants={item}className="tech-card"><SiDocker size={24}/> Docker</motion.div>
                 </motion.div>
             
         </FramerWrapper>
