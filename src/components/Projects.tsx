@@ -11,30 +11,83 @@ export default function Projects(){
         <FramerWrapper id="projects">
             <AccordionProvider allowMultiple={false}>
               <motion.h2 variants={item} className="headings">Featured Projects</motion.h2>
+
               <AccordionItemIdProvider id="project1">
-                <AccordionHeader title="Fitness Planner (WIP)" miniInfo="Role-based fitness planning platform focusing on backend architecture, authorization, and clean separation of concerns." techStack="React · TypeScript · Node.js · Express · MongoDB · JWT · Zod" liveDemo="#" github="https://github.com/Vishwas2607/fitness-wiki-mern.git"/>
+                <AccordionHeader title="PulseCheck" miniInfo="A production-oriented distributed uptime monitoring system inspired by modern observability tools like Pingdom and Datadog." techStack="React · TypeScript · Node.js · Express · MongoDB · Docker" liveDemo="https://pulse-check-m0fs.onrender.com" github="https://github.com/Vishwas2607/pulse-check-mern.git"/>
                 <AccordionPanel >
                   <div className="flex flex-col gap-6 sticky">
-                      <img src="#" className="screenshots"/>
-                      <img src="#" className="screenshots"/>
+                      <img src="pulse-check-monitors.png" className="screenshots"/>
+                      <img src="pulse-check-analytics.png" className="screenshots"/>
                   </div>
 
                   <div className="flex flex-col gap-6 mt-2">
                       <div >
                           <h4 className="primary-text text-lg">Overview</h4>
-                          <p className="body-text secondary-text">A fitness planning system built to demonstrate scalable backend architecture, role-based authorization, and structured service layers.</p>
+                          <p className="body-text secondary-text">PulseCheck continuously monitors service availability, detects failures in real time, and manages incident lifecycles using a scalable, queue-driven architecture.</p>
                       </div>
 
                       <div>
                           <h4 className="primary-text text-lg">Key Features</h4>
                           <ul className="body-text secondary-text">
-                            <li>● Admin and user role-based access control</li>
-                            <li>● Centralized authentication & authorization middleware</li>
-                            <li>● Repository and service pattern for business logic isolation</li>
-                            <li>● Zod validation on both frontend and backend</li>
-                            <li>● Backend-verified authentication (/auth/me)</li>
-                            <li>● Refresh token rotation (single-device login)</li>
-                            <li>● Protected route layout with loading and auth states</li>
+                            <li>● Asynchronous architecture using Redis + BullMQ for high scalability</li>
+                            <li>● Idempotent & retry-safe workers with exponential backoff</li>
+                            <li>● Real-time analytics via incremental aggregation (~90% faster queries)</li>
+                            <li>● Secure JWT-based authentication system</li>
+                            <li>● Optimized MongoDB indexing & query design (ESR, partial indexes)</li>
+                            <li>● Designed with production trade-offs & failure scenarios in mind</li>
+                          </ul>
+                      </div>
+
+                      <div >
+                          <h4 className="primary-text text-lg">Engineering Decisions</h4>
+                          <ul className="body-text secondary-text">
+                            <li>● Optimized database performance using compound indexing (ESR pattern), partial indexes, covered queries, and O(1) cursor-based pagination</li>
+                            <li>● Reliable data handling with idempotent writes and concurrency-safe system design</li>
+                            <li>● Fault-tolerant processing with dead letter queue (DLQ) support for failed operations</li>
+                            <li>● Robust retry mechanism using exponential backoff, triggered only for 5xx server errors and network failures.</li>
+                          </ul>
+                      </div>
+
+                      <div>
+                          <h4 className="primary-text text-lg">What I Learned</h4>
+                          <ul className="body-text secondary-text">
+                            <li>● Learned advanced database optimization techniques including ESR-based indexing, partial/covered indexes, aggregation strategies, and understanding indexing tradeoffs</li>
+                            <li>● Gained hands-on experience with background job processing using workers, Redis, and BullMQ, along with concepts like idempotency and concurrency-safe system design</li>
+                            <li>● Improved DevOps and deployment knowledge by working with Docker and setting up CI/CD pipelines that trigger builds only after successful tests</li>
+                          </ul>
+                      </div>
+
+                      <div>
+                        <h4 className="primary-text text-lg">Architecture</h4>
+                        <p className="body-text secondary-text">Client → API → Queue → Worker → MongoDB</p>
+                      </div>
+                  </div>
+                </AccordionPanel>
+              </AccordionItemIdProvider>
+
+              <AccordionItemIdProvider id="project2">
+                <AccordionHeader title="FitnessWiki" miniInfo="Role-based fitness planning platform focusing on backend architecture, authorization, and clean separation of concerns." techStack="React · TypeScript · Node.js · Express · MongoDB · JWT · Zod" liveDemo="https://fitness-wiki-frontend.onrender.com/" github="https://github.com/Vishwas2607/fitness-wiki-mern.git"/>
+                <AccordionPanel >
+                  <div className="flex flex-col gap-6 sticky">
+                      <img src="fitness-wiki-home.png" className="screenshots"/>
+                      <img src="fitness-wiki-dashboard.png" className="screenshots"/>
+                  </div>
+
+                  <div className="flex flex-col gap-6 mt-2">
+                      <div >
+                          <h4 className="primary-text text-lg">Overview</h4>
+                          <p className="body-text secondary-text">A full-stack MERN fitness planner web application that helps users generate, preview, and manage structured workout plans based on their fitness goals, experience level, and available equipment.</p>
+                      </div>
+
+                      <div>
+                          <h4 className="primary-text text-lg">Key Features</h4>
+                          <ul className="body-text secondary-text">
+                            <li>● Secure authentication system with JWT, access/refresh token rotation, HTTP-only cookies, and persistent login via /auth/me</li>
+                            <li>● Advanced access control using RBAC, protected routes, and single-session enforcement for better security</li>
+                            <li>● Clean authentication management with secure logout flow and TypeScript enum-based auth state handling</li>
+                            <li>● Personalized fitness features including recommended and custom-generated workout plans with preview before saving</li>
+                            <li>● Smart workout customization using goal-based selection, dynamic exercise filtering, and equipment-aware generation</li>
+                            <li>● Workout management system with saved plans support and an admin-managed global exercise library</li>
                           </ul>
                       </div>
 
@@ -63,41 +116,6 @@ export default function Projects(){
                       </div>
                   </div>
                 </AccordionPanel>
-              </AccordionItemIdProvider>
-
-              <AccordionItemIdProvider id="project2">
-                <AccordionHeader title="Career Dasboard" miniInfo="Secure MERN application for tracking job applications with analytics, and robust authentication." techStack="React · TypeScript · Node.js · Express · MongoDB · JWT · Zod" liveDemo="https://career-dashboard-mern.vercel.app/" github="https://github.com/Vishwas2607/career-dashboard-mern.git"/>
-                <AccordionPanel>
-                  <div className="flex flex-col gap-6 sticky">
-                      <img  src="/career-dashboard-home.png" className="screenshots"/>
-                      <img  src="/career-dashboard-analytics.png" className="screenshots"/>
-                  </div>
-
-                  <div className="flex flex-col gap-6 mt-2">
-                      <div >
-                          <h4 className="primary-text text-lg">Overview</h4>
-                          <p className="body-text secondary-text">A full-stack application designed to help users track job applications with secure authentication, analytics dashboards, and scalable backend architecture.</p>
-                      </div>
-
-                      <div >
-                          <h4 className="primary-text text-lg">Key Features</h4>
-                          <ul className="body-text secondary-text">
-                            <li>● JWT authentication with HTTP-only cookies</li>
-                            <li>● Refresh token rotation (single-device login)</li>
-                            <li>● Application status analytics with charts</li>
-                            <li>● Rate-limited APIs and security middleware</li>
-                          </ul>
-                      </div>
-
-                      <div>
-                          <h4 className="primary-text text-lg">Engineering Decisions</h4>
-                          <ul className="body-text secondary-text">
-                            <li>● Cookies used instead of localStorage to prevent XSS vulnerabilities</li>
-                            <li>● Future-ready structure for testing and scaling</li>
-                          </ul>
-                      </div>
-                  </div>
-                  </AccordionPanel>
               </AccordionItemIdProvider>
 
               <AccordionItemIdProvider id="project3">
