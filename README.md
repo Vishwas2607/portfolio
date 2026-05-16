@@ -7,31 +7,31 @@ Production-focused MERN Stack Developer building scalable, secure, and maintaina
 
 🎯 Why This Portfolio Exists
 
-This portfolio demonstrates my approach to building secure, scalable, and production-ready full-stack applications with strong backend architecture and clean frontend systems.
+This portfolio demonstrates my approach to building secure, scalable, and production-ready full-stack applications with strong backend architecture and clean frontend systems. 
+
+---
 
 👨‍💻 About Me
 
-I’m a MERN stack developer focused on building production-ready applications rather than demo projects.
+I’m a MERN stack developer focused on building production-ready applications. My primary interest lies in backend development — designing authentication systems, implementing role-based access control, modeling databases efficiently, and maintaining clean architecture with clear separation of concerns.
 
 I enjoy solving real-world problems like:
 
-Authentication state management
+- Authentication state management
 
-Role-Based Access Control (RBAC)
+- Role-Based Access Control (RBAC)
 
-Secure token handling (JWT + HTTP-only cookies)
+- Secure token handling (JWT + HTTP-only cookies)
 
-Performance optimization
+- Performance optimization
 
-Backend architecture design
+- Backend architecture design
 
-My recent projects follow layered backend architecture and emphasize:
+- Idempotency & Concurrency Handling
 
-Security
+My recent work includes PulseCheck, a distributed uptime monitoring system that utilizes an asynchronous queue-worker architecture and optimized MongoDB indexing to achieve a 90% reduction in dashboard latency.
 
-Maintainability
-
-Long-term scalability
+---
 
 🚀 Live Portfolio
 
@@ -43,128 +43,153 @@ Long-term scalability
 
 📧 Email: vishwashverma1234@gmail.com
 
+---
+
 🛠 Tech Stack
+
 🔹 Frontend
 
-React, TypeScript, JavaScript (ES6+)
+- React, TypeScript, JavaScript (ES6+)
 
-React Query, Context API, Fetch
+- React Query, Context API, Fetch
 
-Tailwind CSS, shadcn/ui
+- Tailwind CSS, shadcn/ui
 
-Framer Motion, Swiper
+- Framer Motion, Swiper
 
-React Hook Form, Zod
+- React Hook Form, Zod
 
-Semantic HTML5, Modern CSS3 (FlexBox/Grid), A11y
+- Semantic HTML5, Modern CSS3 (FlexBox/Grid), A11y  
+
+<br>
 
 🔹 Backend (Used in Projects)
 
-Node.js & Express.js
+- Node.js, Express.js & REST APIs
 
-JWT, HTTP-only Cookies, Refresh Token Rotation
+- Redis & BullMQ
 
-Role-Based Access Control (RBAC)
+- JWT, HTTP-only Cookies, Refresh Token Rotation
 
-Zod Validation & Security Middleware
+- Role-Based Access Control (RBAC)
 
-Rate Limiting & Error Handling
+- Zod Validation & Security Middleware
+
+- Rate Limiting & Error Handling
+
+<br>
 
 🔹 Database
 
-MongoDB, Mongoose
+- MongoDB, Mongoose
 
-Aggregation Pipelines & Indexing
+- Aggregation Pipelines & Indexing Strategies
 
-Database Transactions
+- Data Modeling & Schema Design
 
-Data Modeling & Schema Design
+<br>
 
-🔹 Dev & Tools
+🔹 Testing & DevOps
 
-Git & GitHub
+- Vitest · Supertest · MongoMemoryServer
 
-REST API Design & Postman (Fundamentals)
+- Docker · GitHub Actions (CI/CD)
 
-Docker (Containerization)
+<br>
 
-Vercel, Render, Chrome DevTools
+🔹 Tools & Concepts
+
+- Git & GitHub
+
+- Postman
+
+- Vercel · Render
+
+- Chrome DevTools
+
+- Queue-Based-System · API Security
+
+- Idempotency · Concurrency Handling  
+
+---
 
 📂 Featured Projects
 
 This portfolio currently showcases three projects:
 
-1️⃣ Career Dashboard (MERN)
+1️⃣ PulseCheck – Distributed Uptime Monitoring System
 
-● JWT authentication with HTTP-only cookies
-● Refresh token rotation (single-device login)
-● Application status analytics with charts
-● Rate-limited APIs and security middleware
+PulseCheck continuously monitors service availability, detects failures in real time, and manages incident lifecycles using a scalable, queue-driven architecture.
 
-Deployment:
+Tech Stack: React · TypeScript · Node.js · Express · MongoDB · Redis · BullMQ · Docker
 
-Frontend: Vercel
+🌐 Live Demo: http://pulse-check-m0fs.onrender.com
 
-Backend: Render 
+🐙 Repository: https://github.com/Vishwas2607/pulse-check-mern
 
-Database: MongoDB Atlas
+<br>
 
-Live Demo: https://career-dashboard-mern.vercel.app/
+2️⃣ Fitness Planner – Scalable Backend Architecture
 
+Role-based fitness planning platform focused on backend architecture and authorization design.
 
-2️⃣ FilmBox
+Tech Stack: React · TypeScript · Node.js · Express · MongoDB · JWT · Zod
 
-● Infinite scroll and Pagination with React Query
-● API prefetching and caching
-● Accessible UI using ARIA attributes
-● Lazy-loaded images for performance
+🌐 Live Demo: https://fitness-wiki-frontend.onrender.com/
 
-Live Demo: https://film-box-react.vercel.app/
+🐙 Repository: https://github.com/Vishwas2607/fitness-wiki-mern
 
+<br>
 
-3️⃣ Fitness Planner (Work in Progress)
+3️⃣ FilmBox – Performance-Focused Frontend Application
 
-● Admin and user role-based access control
-● Centralized authentication & authorization middleware
-● Repository and service pattern for business logic isolation
-● Zod validation on both frontend and backend
-● Backend-verified authentication (/auth/me)
-● Protected route layout with loading and auth states
+Frontend-focused application demonstrating API integration, caching, infinite scrolling, and accessibility best practices.
 
-Live Demo: Coming Soon
+Tech Stack: React · TypeScript · React Query · Tailwind CSS
+
+🌐 Live: https://film-box-react.vercel.app/
+
+🐙 Repository: https://github.com/Vishwas2607/film-box-react
+
+---
 
 ✨ Portfolio Features
 
-Dark Mode (Zinc + Indigo Accent)
+- Dark Mode (Zinc + Indigo Accent)
 
-Responsive Design
+- Responsive Design
 
-Hero Section with Image
+- Hero Section with Image
 
-About Section
+- About Section
 
-Skills Section
+- Skills Section
 
-Resume Download
+- Resume Download
 
-Project Cards with Accordion
+- Project Cards with Accordion
 
-Fade-up & Stagger Animations (Framer Motion)
+- Fade-up & Stagger Animations (Framer Motion)
 
-Contact Buttons (Email, LinkedIn, GitHub)
+- Contact Buttons (Email, LinkedIn, GitHub)
+
+---
 
 🎯 Engineering Focus
 
-Secure authentication flows
+- Secure authentication flows
 
-Backend architecture structuring
+- Backend architecture structuring
 
-Scalable API design
+- Scalable API design
 
-State management strategies
+- State management strategies
 
-Performance optimization techniques
+- Performance optimization techniques
 
+- Idempotency & Concurrency Handling
+
+---
 
 ⚙️ Installation & Setup
 
@@ -184,6 +209,7 @@ npm run dev
 
 📁 Project Structure
 
+```text
 src/
 │── app.tsx
 │── accordion/
@@ -192,8 +218,9 @@ src/
 │── pages/
 │── types/
 │── utils/
+```
 
-
+---
 📦 Environment Variables
 
 No environment variables required.
