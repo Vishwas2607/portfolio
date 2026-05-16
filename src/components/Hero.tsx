@@ -1,4 +1,4 @@
-import { SiReact,SiNodedotjs,SiMongodb,SiExpress,SiTypescript,SiTailwindcss, SiHtml5, SiCss3,SiJavascript, SiReactquery, SiRedis, SiMongoose, SiVitest, SiDocker } from 'react-icons/si';
+import { SiReact,SiNodedotjs,SiMongodb,SiExpress,SiTypescript,SiTailwindcss, SiJavascript, SiReactquery, SiRedis, SiVitest, SiDocker } from 'react-icons/si';
 import { motion } from "framer-motion"
 import { container, item } from "../utils/constants"
 import FramerWrapper from "./FramerWrapper"
@@ -13,10 +13,10 @@ export default function Hero(){
                     </motion.h1>
 
                     <motion.h2 variants={item} className='text-2xl md:text-3xl text-zinc-300 mt-2 tracking-tight'>
-                        MERN Stack Developer building secure, scalable full-stack applications
+                        Backend-leaning MERN Developer focused on building scalable, production-oriented applications 
                     </motion.h2>
                     <motion.p variants={item} className='body-text secondary-text'>
-                        Focused on clean architecture, authentication systems, and performance-oriented frontend–backend integration.
+                        Skilled in designing secure REST APIs, JWT/RBAC authentication, optimized database queries Experienced with Redis queue-based systems, Docker, and CI/CD workflows.
                     </motion.p>
                     <motion.div variants={item} className='flex gap-6'>
                     <a href='/resume.pdf' download={"/resume.pdf"} className='primary-btn'>Download Resume</a>
