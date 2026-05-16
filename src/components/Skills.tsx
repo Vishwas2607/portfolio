@@ -13,41 +13,38 @@ export default function Skills() {
                 <motion.div variants={item} className="primary-text card">
                   <motion.h3 variants={item} className='text-lg mb-2 flex gap-2 items-center'><FaCode/> Frontend </motion.h3>
                   <motion.ul variants={item} className='list'>
-                    <motion.li variants={item}>React, TypeScript, JavaScript (ES6+)</motion.li>
-                    <motion.li variants={item}>Tailwind CSS, shadcn/ui</motion.li>
-                    <motion.li variants={item}>Context API, React Query, Fetch</motion.li>
+                    <motion.li variants={item}>React.js, TypeScript, JavaScript (ES6+)</motion.li>
+                    <motion.li variants={item}>React Query, Tailwind CSS, shadcn/ui</motion.li>
+                    <motion.li variants={item}>React Hook Form, Zod, Axios</motion.li>
                     <motion.li variants={item}>Framer Motion, Swiper</motion.li>
-                    <motion.li variants={item}>React Hook Form, Zod</motion.li>
-                    <motion.li variants={item}>Semantic HTML5, Modern CSS3 (FlexBox/Grid) A11y</motion.li>
+                    <motion.li variants={item}>HTML5, CSS3</motion.li>
                   </motion.ul>
                 </motion.div>
 
                 <motion.div variants={item} className="primary-text card">
                   <motion.h3 variants={item} className='text-lg mb-2 flex gap-2 items-center'><FaServer/> Backend</motion.h3>
                   <motion.ul variants={item} className='list'>
-                    <motion.li variants={item}>Node.js, Express.js</motion.li>
-                    <motion.li variants={item}>JWT, HTTP-only Cookies, Refresh Tokens</motion.li>
-                    <motion.li variants={item}>Role-Based Access Control (RBAC)</motion.li>
-                    <motion.li variants={item}>Zod Validation & Security Middleware</motion.li>
-                    <motion.li variants={item}>Rate Limiting & Error Handling</motion.li>
+                    <motion.li variants={item}>Node.js, Express.js, REST APIs</motion.li>
+                    <motion.li variants={item}>Scalable Backend Architecture, Concurrency Handling</motion.li>
+                    <motion.li variants={item}>Queue-Based Systems (BullMQ, Redis)</motion.li>
+                    <motion.li variants={item}>JWT Authentication, HTTP-only Cookies, Refresh Tokens, Idempotency, RBAC</motion.li>
+                    <motion.li variants={item}>Rate Limiting, Helmet, Security Middleware</motion.li>
                   </motion.ul>
                 </motion.div>
                 <motion.div variants={item} className="primary-text card">
                   <motion.h3 variants={item} className='text-lg mb-2 flex gap-2 items-center'><FaDatabase/> Database</motion.h3>
                   <motion.ul variants={item} className='list'>
                     <motion.li variants={item}>MongoDB, Mongoose</motion.li>
-                    <motion.li variants={item}>Aggregation Pipelines & Indexing</motion.li>
-                    <motion.li variants={item}>Database Transactions</motion.li>
-                    <motion.li variants={item}>Data Modeling & Schema Design</motion.li>
+                    <motion.li variants={item}>Aggregation Pipelines, Indexing Strategies</motion.li>
+                    <motion.li variants={item}>Database Transactions, Data Modeling</motion.li>
                   </motion.ul>
                 </motion.div>
                 <motion.div variants={item} className="primary-text card">
                   <motion.h3 variants={item} className='text-lg mb-2 flex gap-2 items-center'><FaTools/> Dev & Tooling</motion.h3>
                   <motion.ul variants={item} className='list'>
-                    <motion.li variants={item}>Git & Github</motion.li>
-                    <motion.li variants={item}>REST API Design & Postman</motion.li>
-                    <motion.li variants={item}>Docker (Containerization)</motion.li>
-                    <motion.li variants={item}>Vercel, Render, Chrome DevTools</motion.li>
+                    <motion.li variants={item}>Vitest, Supertest, MongoMemoryServer</motion.li>
+                    <motion.li variants={item}>Docker (Containerization), GitHub Actions (CI/CD)</motion.li>
+                    <motion.li variants={item}>Git, GitHub, Postman, Chrome DevTools, Vercel, Render</motion.li>
                   </motion.ul>
                 </motion.div>
               </motion.div>
