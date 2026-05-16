@@ -10,7 +10,7 @@ export default function About() {
             <motion.div variants={item} className="body-text primary-text flex flex-col gap-5">
               <motion.p variants={item}>I’m a MERN stack developer focused on building production-ready applications rather than demo projects.</motion.p>
               <motion.p variants={item}>I enjoy solving real-world problems like authentication state management, role-based access control, and performance optimization.</motion.p>
-              <motion.p variants={item}>My recent projects follow layered backend architecture and emphasize security, maintainability, and long-term scalability.</motion.p>
+              <motion.p variants={item}>My recent work includes PulseCheck, a distributed uptime monitoring system that utilizes an asynchronous queue-worker architecture and optimized MongoDB indexing to achieve a 90% reduction in dashboard latency.</motion.p>
             </motion.div>
       </FramerWrapper>
     )
